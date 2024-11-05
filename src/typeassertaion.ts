@@ -46,8 +46,12 @@ const getresult=<pera1Type ,pera2Type>(a:pera1Type , b:pera2Type)=>{
     }else {
         return (`${a}and ${b}is not number`)
     }
-}
+}  
 const results =getresult<number,number>(1,3)
 console.log(results);
+// constraints
+const getany =<t extends {length:number}>(str:t)=>{
+    return str.length
+}
     // 
 }
