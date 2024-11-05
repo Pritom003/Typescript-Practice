@@ -7,7 +7,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "dev":"ts-node-dev --respawn --transpile-only src/function.ts"
+     "dev":"ts-node-dev --respawn --transpile-only src/operator-and-destructuring.ts"
   },
   "keywords": [],
   "author": "",
