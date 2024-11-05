@@ -27,7 +27,27 @@ const Person:Iperson={
     company:'x',
     Ismarried:true
 }
-
-
+// genetic 
+interface student<T>{
+    name: string;
+    age: number;
+    // id:number|string|null
+    id:T
+} 
+const student1 :student<string>={
+    name:'x',
+    age:3,
+    id:'123'
+}
+// function generics 
+const getresult=<pera1Type ,pera2Type>(a:pera1Type , b:pera2Type)=>{
+    if(typeof a === 'number' && typeof b ==='number'){
+        return a+b
+    }else {
+        return (`${a}and ${b}is not number`)
+    }
+}
+const results =getresult<number,number>(1,3)
+console.log(results);
     // 
 }
